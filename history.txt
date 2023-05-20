@@ -1,0 +1,11 @@
+PARTE 1-
+sudo docker image build . -t custom_caddy
+sudo docker run --name caddy_server -p 8888:80 -d custom_caddy:latest
+
+PARTE 2-
+
+sudo docker image build . -t custom_caddy
+sudo docker run --name caddy_server -p 8888:80 -v ./pages:/usr/src/pages -d custom_caddy:latest 
+
+
+
